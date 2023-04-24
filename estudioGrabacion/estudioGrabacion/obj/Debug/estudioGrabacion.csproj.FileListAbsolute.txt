@@ -1,0 +1,16 @@
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\estudioGrabacion.csproj.AssemblyReference.cache
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\estudioGrabacion.csproj.SuggestedBindingRedirects.cache
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\MainWindow.g.cs
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\App.g.cs
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\estudioGrabacion_MarkupCompile.cache
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\estudioGrabacion_MarkupCompile.lref
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\bin\Debug\estudioGrabacion.exe.config
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\bin\Debug\estudioGrabacion.exe
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\bin\Debug\estudioGrabacion.pdb
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\MainWindow.baml
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\estudioGrabacion.g.resources
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\estudioGrabacion.Properties.Resources.resources
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\estudioGrabacion.csproj.GenerateResource.cache
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\estudioGrabacion.csproj.CoreCompileInputs.cache
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\estudioGrabacion.exe
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\estudioGrabacion.pdb

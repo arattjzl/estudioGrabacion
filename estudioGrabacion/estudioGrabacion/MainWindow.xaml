@@ -6,7 +6,25 @@
         xmlns:local="clr-namespace:estudioGrabacion"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+    
+    <DockPanel>
+        <Menu DockPanel.Dock="Left" VerticalAlignment="Top" Height="100" Background="AliceBlue" Margin="10,20,10,10">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button Content="Inicio" Grid.Row="0" Margin="3"/>
+                <Button Content="Beat" Grid.Row="1" Margin="3"/>
+                <Button Content="Estudio" Grid.Row="2" Margin="3"/>
+                <Button Content="Cuenta" Grid.Row="3" Margin="3"/>
+            </Grid>
+        </Menu>
+        <TextBox AcceptsReturn="True" />
+        <Border Background="Gray" Margin="0,0,0,360">
+            <Label Content="Estudio grabacion" HorizontalAlignment="Center" Margin="0,20,0,20"/>
+        </Border>
+    </DockPanel>
 </Window>
