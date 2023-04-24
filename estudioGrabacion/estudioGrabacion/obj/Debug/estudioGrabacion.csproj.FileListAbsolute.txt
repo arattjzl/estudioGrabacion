@@ -14,3 +14,9 @@ C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabaci
 C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\estudioGrabacion.csproj.CoreCompileInputs.cache
 C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\estudioGrabacion.exe
 C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\estudioGrabacion.pdb
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\Beat.g.cs
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\Beat.baml
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\Cuenta.g.cs
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\Estudio.g.cs
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\Cuenta.baml
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\Estudio.baml

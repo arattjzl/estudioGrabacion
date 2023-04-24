@@ -10,32 +10,31 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace estudioGrabacion
 {
     /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
+    /// Lógica de interacción para Estudio.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Estudio : Window
     {
-        public MainWindow()
+        public Estudio()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void inicio_Click(object sender, RoutedEventArgs e)
         {
-            Beat venBeat = new Beat();
-            venBeat.Show();
+            MainWindow venInicio = new MainWindow();
+            venInicio.Show();
             Visibility = Visibility.Hidden;
         }
 
-        private void estudio_Click(object sender, RoutedEventArgs e)
+        private void beat_Click(object sender, RoutedEventArgs e)
         {
-            Estudio venEstudio = new Estudio(); 
-            venEstudio.Show();
+            Beat venBeat = new Beat();
+            venBeat.Show();
             Visibility = Visibility.Hidden;
         }
 
