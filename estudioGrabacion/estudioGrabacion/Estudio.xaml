@@ -16,10 +16,42 @@
                     <RowDefinition/>
                     <RowDefinition/>
                 </Grid.RowDefinitions>
-                <Button x:Name="inicio" Content="Inicio" Grid.Row="0" Margin="3" Click="inicio_Click"/>
-                <Button x:Name="beat" Content="Beat" Grid.Row="1" Margin="3" Click="beat_Click"/>
-                <Button x:Name="estudio" Content="Estudio" Grid.Row="2" Margin="3" Background="Aquamarine"/>
-                <Button x:Name="cuenta" Content="Cuenta" Grid.Row="3" Margin="3" Click="cuenta_Click"/>
+                <Button Content="Inicio" x:Name="inicio" Background="Aquamarine" Grid.Row="0" Margin="2,3,3,3" Padding="1,1,1,1" FontSize="10" Click="inicio_Click">
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
+                                <ContentPresenter Content="Inicio" HorizontalAlignment="Center" Height="14" ></ContentPresenter>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button x:Name="beat" Background="Aquamarine" Grid.Row="1" Margin="2,3,3,3" Padding="1,1,1,1" Click="beat_Click" FontSize="10" >
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
+                                <ContentPresenter Content="Beat" HorizontalAlignment="Center" Height="14"></ContentPresenter>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button x:Name="estudio" Background="Aquamarine" Grid.Row="2" Margin="2,3,3,3" Padding="1,1,1,1" FontSize="10" BorderBrush="Black">
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
+                                <ContentPresenter Content="Estudio" HorizontalAlignment="Center" Height="14"></ContentPresenter>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+                <Button x:Name="cuenta" Background="Aquamarine" Grid.Row="3" Margin="2,3,3,3" Padding="1,1,1,1" Click="cuenta_Click" FontSize="10">
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
+                                <ContentPresenter Content="Cuenta" HorizontalAlignment="Center" Height="14"></ContentPresenter>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
             </Grid>
         </Menu>
         <Border Background="Gray" Margin="0,0,0,720">
