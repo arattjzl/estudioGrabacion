@@ -4,58 +4,59 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:estudioGrabacion"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
         mc:Ignorable="d"
         Title="Cuenta" WindowState="Maximized"
         Visibility="Visible">
-    <DockPanel>
-        <Menu DockPanel.Dock="Left" VerticalAlignment="Top" Height="100" Background="AliceBlue" Margin="10,20,10,10">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                    <RowDefinition/>
-                </Grid.RowDefinitions>
-                <Button Content="Inicio" x:Name="inicio" Background="Aquamarine" Grid.Row="0" Margin="2,3,3,3" Padding="1,1,1,1" FontSize="10" Click="inicio_Click">
+    <Grid>
+        <Grid Background="Black" Height="160" VerticalAlignment="Top" >
+            <Label Content="ESTUDIO" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="300,0,0,0" FontSize="40" FontFamily="Ink Free"/>
+            <Image Source="imagenes/giphy.gif" Height="110" gif:ImageBehavior.AnimatedSource="imagenes/giphy.gif" gif:ImageBehavior.RepeatBehavior="Forever" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Label Content="GRABACI" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,300,0" FontSize="40" FontFamily="Ink Free"/>
+            <Grid Height="50" VerticalAlignment="Bottom">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="inicio" Foreground="White" Grid.Column="0" Margin="2,3,3,3" Padding="1,1,1,1" FontSize="24" FontFamily="Bodoni MT" Click="inicio_Click">
                     <Button.Template>
                         <ControlTemplate TargetType="{x:Type Button}">
-                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
-                                <ContentPresenter Content="Inicio" HorizontalAlignment="Center" Height="14" ></ContentPresenter>
+                            <Border Background="Black" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
+                                <ContentPresenter Content="Inicio" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" ></ContentPresenter>
                             </Border>
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-                <Button x:Name="beat" Background="Aquamarine" Grid.Row="1" Margin="2,3,3,3" Padding="1,1,1,1" FontSize="10" Click="beat_Click">
+                <Button x:Name="beat" Foreground="White" Grid.Column="1" Margin="2,3,3,3" Padding="1,1,1,1" FontSize="24" FontFamily="Bodoni MT" Click="beat_Click">
                     <Button.Template>
                         <ControlTemplate TargetType="{x:Type Button}">
                             <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
-                                <ContentPresenter Content="Beat" HorizontalAlignment="Center" Height="14"></ContentPresenter>
+                                <ContentPresenter Content="Beat" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30"></ContentPresenter>
                             </Border>
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-                <Button x:Name="estudio" Background="Aquamarine" Grid.Row="2" Margin="2,3,3,3" Padding="1,1,1,1" FontSize="10" Click="estudio_Click">
+                <Button x:Name="estudio" Foreground="White" Grid.Column="2" Margin="2,3,3,3" Padding="1,1,1,1" Click="estudio_Click" FontSize="24" FontFamily="Bodoni MT">
                     <Button.Template>
                         <ControlTemplate TargetType="{x:Type Button}">
                             <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
-                                <ContentPresenter Content="Estudio" HorizontalAlignment="Center" Height="14"></ContentPresenter>
+                                <ContentPresenter Content="Estudio" HorizontalAlignment="Center" VerticalAlignment="Center" Height="24"></ContentPresenter>
                             </Border>
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-                <Button x:Name="cuenta" Background="Aquamarine" Grid.Row="3" Margin="2,3,3,3" Padding="1,1,1,1" FontSize="10" BorderBrush="Black">
+                <Button x:Name="cuenta" Foreground="Black" Grid.Column="3" Margin="2,3,3,3" Padding="1,1,1,1" FontSize="24" FontFamily="Bodoni MT">
                     <Button.Template>
                         <ControlTemplate TargetType="{x:Type Button}">
-                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
-                                <ContentPresenter Content="Cuenta" HorizontalAlignment="Center" Height="14"></ContentPresenter>
+                            <Border Background="White" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
+                                <ContentPresenter Content="Cuenta" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30"></ContentPresenter>
                             </Border>
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
             </Grid>
-        </Menu>
-        <Border Background="Gray" Margin="0,0,0,720">
-            <Label Content="Estudio grabacion" HorizontalAlignment="Center" Margin="0,20,0,20"/>
-        </Border>
-    </DockPanel>
+        </Grid>
+    </Grid>
 </Window>

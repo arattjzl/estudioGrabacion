@@ -42,3 +42,7 @@ D:\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\estudioGrabacion
 D:\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\estudioGrabacion.csproj.CoreCompileInputs.cache
 D:\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\estudioGrabacion.exe
 D:\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\estudioGrabacion.pdb
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\bin\Debug\WpfAnimatedGif.dll
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\bin\Debug\WpfAnimatedGif.pdb
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\bin\Debug\WpfAnimatedGif.xml
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\estudioGrabacion.csproj.CopyComplete
