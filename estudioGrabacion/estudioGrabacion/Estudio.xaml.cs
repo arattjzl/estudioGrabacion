@@ -19,28 +19,34 @@ namespace estudioGrabacion
     /// </summary>
     public partial class Estudio : Window
     {
-        public Estudio()
+        private bool admin;
+        private string usuario;
+
+
+        public Estudio(bool admin, string usuario)
         {
             InitializeComponent();
+            this.admin = admin;
+            this.usuario = usuario;
         }
 
         private void inicio_Click(object sender, RoutedEventArgs e)
         {
-            MainWindow venInicio = new MainWindow();
+            MainWindow venInicio = new MainWindow(admin, usuario);
             venInicio.Show();
             Visibility = Visibility.Hidden;
         }
 
         private void beat_Click(object sender, RoutedEventArgs e)
         {
-            Beat venBeat = new Beat();
+            Beat venBeat = new Beat(admin, usuario);
             venBeat.Show();
             Visibility = Visibility.Hidden;
         }
 
         private void cuenta_Click(object sender, RoutedEventArgs e)
         {
-            Cuenta venCuenta = new Cuenta();
+            Cuenta venCuenta = new Cuenta(admin, usuario);
             venCuenta.Show();
             Visibility = Visibility.Hidden;
         }

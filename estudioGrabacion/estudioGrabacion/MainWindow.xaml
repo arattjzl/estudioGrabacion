@@ -7,7 +7,7 @@
         xmlns:gif="http://wpfanimatedgif.codeplex.com"
         mc:Ignorable="d"
         Title="MainWindow" WindowState="Maximized"
-        Visibility="Visible" d:DesignHeight="476.31" d:DesignWidth="1589.147">
+        Visibility="Visible" d:DesignHeight="476.31" d:DesignWidth="1853.147">
 
     <Grid>
         <Grid Background="Black" Height="160" VerticalAlignment="Top" >
@@ -60,8 +60,8 @@
             </Grid>
         </Grid>
         <Grid>
-            <Button Content="Registrarse" HorizontalAlignment="Left" Margin="1700,178,0,0" Width="100" Height="30" VerticalAlignment="Top"/>
-            <Button Content="Iniciar Sesion" HorizontalAlignment="Left" Margin="1550,178,0,0" Width="100" Height="30" VerticalAlignment="Top"/>
+            <Button Content="Registrarse" HorizontalAlignment="Left" Margin="1700,178,0,0" Width="100" Height="30" VerticalAlignment="Top" Click="registrase_click"/>
+            <Button Content="Iniciar Sesion" HorizontalAlignment="Left" Margin="1550,178,0,0" Width="100" Height="30" VerticalAlignment="Top" Click="inicioSes_click"/>
         </Grid>
     </Grid>
 </Window>

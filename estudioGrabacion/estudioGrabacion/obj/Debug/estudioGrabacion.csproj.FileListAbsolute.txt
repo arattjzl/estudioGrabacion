@@ -46,3 +46,7 @@ C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabaci
 C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\bin\Debug\WpfAnimatedGif.pdb
 C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\bin\Debug\WpfAnimatedGif.xml
 C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\estudioGrabacion.csproj.CopyComplete
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\InicioSesion.g.cs
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\InicioSesion.baml
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\Registro.g.cs
+C:\Users\aratt\workspace\escuela\programacionNET\estudioGrabacion\estudioGrabacion\estudioGrabacion\obj\Debug\Registro.baml

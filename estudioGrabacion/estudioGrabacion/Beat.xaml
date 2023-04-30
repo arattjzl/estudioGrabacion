@@ -58,5 +58,6 @@
                 </Button>
             </Grid>
         </Grid>
+        <Button x:Name="algo" Content="Button" HorizontalAlignment="Left" Margin="232,172,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
     </Grid>
 </Window>

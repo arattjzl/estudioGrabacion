@@ -1,0 +1,36 @@
+﻿<Window x:Class="estudioGrabacion.InicioSesion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        xmlns:local="clr-namespace:estudioGrabacion"
+        mc:Ignorable="d"
+        Title="InicioSesion" Height="270" Width="800">
+
+    <Grid>
+        <Grid Background="Black" Height="80" VerticalAlignment="Top" >
+            <Image Source="imagenes/giphy.gif" Height="80" gif:ImageBehavior.AnimatedSource="imagenes/giphy.gif" gif:ImageBehavior.RepeatBehavior="Forever" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Margin="0,100,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Label Content="Usuario:" Grid.Row="0" Grid.Column="0" />
+            <TextBox Name="tbUsuario" Grid.Row="0" Grid.Column="1" Margin="5" />
+            <Label Content="Contraseña:" Grid.Row="1" Grid.Column="0" />
+            <PasswordBox Name="pbContrasena" Grid.Row="1" Grid.Column="1" Margin="5" />
+            <Button Name="btnIniciarSesion" Content="Iniciar sesión" Grid.Row="2" Grid.Column="1" Margin="5" Click="btnIniciarSesion_Click" />
+            <Label x:Name="incorrecto" Content="Usuario o contraseña incorrectos" HorizontalAlignment="Center" Foreground="red" Grid.Row="3" Grid.Column="1" Margin="5" Visibility="Hidden" />
+        </Grid>
+    </Grid>
+</Window>
