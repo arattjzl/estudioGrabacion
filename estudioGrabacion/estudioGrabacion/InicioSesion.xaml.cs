@@ -29,6 +29,7 @@ namespace estudioGrabacion
         {
             InitializeComponent();
         }
+
         public void btnIniciarSesion_Click(object sender, RoutedEventArgs e)
         {
             string connectionString = "Data Source=LAPTOP-0UEE9OIC\\VSGESTION;Initial Catalog=ESTUDIOGRABACION;Integrated Security=True";

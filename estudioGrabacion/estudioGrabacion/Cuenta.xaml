@@ -7,12 +7,13 @@
         xmlns:gif="http://wpfanimatedgif.codeplex.com"
         mc:Ignorable="d"
         Title="Cuenta" WindowState="Maximized"
-        Visibility="Visible" d:DesignHeight="638.385" d:DesignWidth="627.12">
+        Visibility="Visible" d:DesignHeight="638.385" d:DesignWidth="627.12"
+        FontFamily="Old English Text MT">
     <Grid>
         <Grid Background="Black" Height="160" VerticalAlignment="Top" >
-            <Label Content="ESTUDIO" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="300,0,0,0" FontSize="40" FontFamily="Ink Free"/>
+            <Label Content="ESTUDIO" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="300,0,0,0" FontSize="40" FontFamily="Old English Text MT"/>
             <Image Source="imagenes/giphy.gif" Height="110" gif:ImageBehavior.AnimatedSource="imagenes/giphy.gif" gif:ImageBehavior.RepeatBehavior="Forever" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Label Content="GRABACI" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,300,0" FontSize="40" FontFamily="Ink Free"/>
+            <Label Content="GRABACI" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,300,0" FontSize="40" FontFamily="Old English Text MT"/>
             <Grid Height="50" VerticalAlignment="Bottom" >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -20,7 +21,7 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="inicio" Foreground="White" Grid.Column="0" Margin="2,3,3,3" Padding="1,1,1,1" FontSize="24" FontFamily="Bodoni MT" Click="inicio_Click">
+                <Button x:Name="inicio" Foreground="White" Grid.Column="0" Margin="2,3,3,3" Padding="1,1,1,1" FontSize="24" FontFamily="Old English Text MT" Click="inicio_Click">
                     <Button.Template>
                         <ControlTemplate TargetType="{x:Type Button}">
                             <Border Background="Black" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
@@ -29,7 +30,7 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-                <Button x:Name="beat" Foreground="White" Grid.Column="1" Margin="2,3,3,3" Padding="1,1,1,1" FontSize="24" FontFamily="Bodoni MT" Click="beat_Click">
+                <Button x:Name="beat" Foreground="White" Grid.Column="1" Margin="2,3,3,3" Padding="1,1,1,1" FontSize="24" FontFamily="Old English Text MT" Click="beat_Click">
                     <Button.Template>
                         <ControlTemplate TargetType="{x:Type Button}">
                             <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
@@ -38,7 +39,7 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-                <Button x:Name="estudio" Foreground="White" Grid.Column="2" Margin="2,3,3,3" Padding="1,1,1,1" Click="estudio_Click" FontSize="24" FontFamily="Bodoni MT">
+                <Button x:Name="estudio" Foreground="White" Grid.Column="2" Margin="2,3,3,3" Padding="1,1,1,1" Click="estudio_Click" FontSize="24" FontFamily="Old English Text MT">
                     <Button.Template>
                         <ControlTemplate TargetType="{x:Type Button}">
                             <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
@@ -47,7 +48,7 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
-                <Button x:Name="cuenta" Foreground="Black" Grid.Column="3" Margin="2,3,3,3" Padding="1,1,1,1" FontSize="24" FontFamily="Bodoni MT">
+                <Button x:Name="cuenta" Foreground="Black" Grid.Column="3" Margin="2,3,3,3" Padding="1,1,1,1" FontSize="24" FontFamily="Old English Text MT">
                     <Button.Template>
                         <ControlTemplate TargetType="{x:Type Button}">
                             <Border Background="White" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
@@ -73,24 +74,24 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Label Grid.Row="0" Grid.Column="0" Content="Usuario:" Margin="5" FontSize="30"/>
-            <TextBox x:Name="user" Grid.Row="0" Grid.Column="1" Margin="5" FontSize="30"/>
+            <Label Grid.Row="0" Grid.Column="0" Content="Usuario:" Margin="5" FontSize="30" FontFamily="Old English Text MT"/>
+            <TextBox x:Name="user" Grid.Row="0" Grid.Column="1" Margin="5" FontSize="30" FontFamily="Old English Text MT"/>
 
-            <Label Grid.Row="1" Grid.Column="0" Content="Contraseña:" Margin="5" FontSize="30"/>
-            <PasswordBox x:Name="contra" Grid.Row="1" Grid.Column="1" Margin="5,5,105,5" FontSize="30" PasswordChar="*"/>
-            <TextBox x:Name="contraSi" Grid.Row="1" Grid.Column="1" Margin="5,5,105,5" FontSize="30"/>
-            <Button x:Name="mostrar" Content="Mostrar/Escoder" Click="ToggleButton_Click" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="1" Margin="5"/>
-            
-            <Label Grid.Row="2" Grid.Column="0" Content="Correo:" Margin="5" FontSize="30"/>
-            <TextBox x:Name="correo" Grid.Row="2" Grid.Column="1" Margin="5" FontSize="30"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="Contraseña:" Margin="5" FontSize="30" FontFamily="Old English Text MT"/>
+            <PasswordBox x:Name="contra" Grid.Row="1" Grid.Column="1" Margin="5,5,105,5" FontSize="30" PasswordChar="*" Visibility="Visible" FontFamily="Old English Text MT"/>
+            <TextBox x:Name="contraSi" Grid.Row="1" Grid.Column="1" Margin="5,5,105,5" FontSize="30" Visibility="Hidden" FontFamily="Old English Text MT"/>
+            <Button x:Name="mostrar" Content="Mostrar/Escoder" Click="ToggleButton_Click" HorizontalAlignment="Right" Grid.Row="1" Grid.Column="1" Margin="5" FontFamily="Old English Text MT"/>
 
-            <Label Grid.Row="3" Grid.Column="0" Content="Teléfono:" Margin="5" FontSize="30"/>
-            <TextBox x:Name="telefono" Grid.Row="3" Grid.Column="1" Margin="5" FontSize="30"/>
-            
-            <Button Grid.Row="4" Grid.Column="1" Content="Actualizar Datos" Margin="5" Padding="10,5" Click="actualizar"/>
-            
-            <Label Grid.Row="5" Grid.ColumnSpan="2"  x:Name="correcto" Content="Se actualizaron los datos" HorizontalAlignment="Center" Foreground="MediumSeaGreen" Margin="5" Visibility="Hidden" />
-            <Label Grid.Row="5" Grid.ColumnSpan="2"  x:Name="incorrecto" Content="No se pudieron actualizaron los datos" HorizontalAlignment="Center" Foreground="red" Margin="5" Visibility="Hidden" />
+            <Label Grid.Row="2" Grid.Column="0" Content="Correo:" Margin="5" FontSize="30" FontFamily="Old English Text MT"/>
+            <TextBox x:Name="correo" Grid.Row="2" Grid.Column="1" Margin="5" FontSize="30" FontFamily="Old English Text MT"/>
+
+            <Label Grid.Row="3" Grid.Column="0" Content="Teléfono:" Margin="5" FontSize="30" FontFamily="Old English Text MT"/>
+            <TextBox x:Name="telefono" Grid.Row="3" Grid.Column="1" Margin="5" FontSize="30" FontFamily="Old English Text MT"/>
+
+            <Button Grid.Row="4" Grid.Column="1" Content="Actualizar Datos" Margin="5" Padding="10,5" Click="actualizar" FontFamily="Old English Text MT"/>
+
+            <Label Grid.Row="5" Grid.ColumnSpan="2"  x:Name="correcto" Content="Se actualizaron los datos" HorizontalAlignment="Center" Foreground="MediumSeaGreen" Margin="5" Visibility="Hidden" FontFamily="Old English Text MT"/>
+            <Label Grid.Row="5" Grid.ColumnSpan="2"  x:Name="incorrecto" Content="No se pudieron actualizaron los datos" HorizontalAlignment="Center" Foreground="red" Margin="5" Visibility="Hidden" FontFamily="Old English Text MT"/>
         </Grid>
     </Grid>
 </Window>

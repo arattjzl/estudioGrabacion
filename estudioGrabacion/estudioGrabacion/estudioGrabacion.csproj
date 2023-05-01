@@ -145,6 +145,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="ESTUDIOGRABACIONDataSet.xsc">
       <DependentUpon>ESTUDIOGRABACIONDataSet.xsd</DependentUpon>
@@ -180,6 +181,18 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="imagenes\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="beats\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\Groove Lab.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\Groove Lab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\fongo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

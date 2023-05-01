@@ -36,7 +36,7 @@ namespace estudioGrabacion
             this.usuario = usuario;
             string miConexion = ConfigurationManager.ConnectionStrings["estudioGrabacion.Properties.Settings.ESTUDIOGRABACIONConnectionString"].ConnectionString;
             miConexionSql = new SqlConnection(miConexion);
-            if(usuario !=null)
+            if(usuario != null)
             {
                 mostrarCampos();
             }
@@ -103,7 +103,7 @@ namespace estudioGrabacion
                 miSqlCommand.ExecuteNonQuery();
                 miConexionSql.Close();
                 correcto.Visibility = Visibility.Visible;
-            } catch(Exception ex)
+            } catch(Exception)
             {
                 incorrecto.Visibility = Visibility.Visible;
             }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,6 +29,10 @@ namespace estudioGrabacion
             InitializeComponent();
             this.admin = admin;
             this.usuario = usuario; 
+            if(usuario != null)
+            {
+                mostrarCampos();
+            }
         }
         public MainWindow()
         {
@@ -66,6 +71,12 @@ namespace estudioGrabacion
         {
             Registro registroVent = new Registro();
             registroVent.Show();
+        }
+
+        public void mostrarCampos()
+        {
+            registrar.Visibility = Visibility.Hidden;
+            inicioSes.Visibility = Visibility.Hidden;
         }
     }
 }

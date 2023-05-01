@@ -6,7 +6,8 @@
         xmlns:gif="http://wpfanimatedgif.codeplex.com"
         xmlns:local="clr-namespace:estudioGrabacion"
         mc:Ignorable="d"
-        Title="InicioSesion" Height="270" Width="800">
+        Title="InicioSesion" Height="270" Width="800"
+        FontFamily="Old English Text MT">
 
     <Grid>
         <Grid Background="Black" Height="80" VerticalAlignment="Top" >
@@ -25,12 +26,12 @@
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Label Content="Usuario:" Grid.Row="0" Grid.Column="0" />
-            <TextBox Name="tbUsuario" Grid.Row="0" Grid.Column="1" Margin="5" />
-            <Label Content="Contraseña:" Grid.Row="1" Grid.Column="0" />
-            <PasswordBox Name="pbContrasena" Grid.Row="1" Grid.Column="1" Margin="5" />
-            <Button Name="btnIniciarSesion" Content="Iniciar sesión" Grid.Row="2" Grid.Column="1" Margin="5" Click="btnIniciarSesion_Click" />
-            <Label x:Name="incorrecto" Content="Usuario o contraseña incorrectos" HorizontalAlignment="Center" Foreground="red" Grid.Row="3" Grid.Column="1" Margin="5" Visibility="Hidden" />
+            <Label Content="Usuario:" Grid.Row="0" Grid.Column="0" FontFamily="Old English Text MT"/>
+            <TextBox Name="tbUsuario" Grid.Row="0" Grid.Column="1" Margin="5" FontFamily="Old English Text MT"/>
+            <Label Content="Contraseña:" Grid.Row="1" Grid.Column="0" FontFamily="Old English Text MT"/>
+            <PasswordBox Name="pbContrasena" Grid.Row="1" Grid.Column="1" Margin="5" FontFamily="Old English Text MT"/>
+            <Button Name="btnIniciarSesion" Content="Iniciar sesión" Grid.Row="2" Grid.Column="1" Margin="5" Click="btnIniciarSesion_Click" FontFamily="Old English Text MT"/>
+            <Label x:Name="incorrecto" Content="Usuario o contraseña incorrectos" HorizontalAlignment="Center" Foreground="red" Grid.Row="3" Grid.Column="1" Margin="5" Visibility="Hidden" FontFamily="Old English Text MT"/>
         </Grid>
     </Grid>
 </Window>

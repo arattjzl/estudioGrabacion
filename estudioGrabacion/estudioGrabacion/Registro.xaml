@@ -6,7 +6,8 @@
         xmlns:gif="http://wpfanimatedgif.codeplex.com"
         xmlns:local="clr-namespace:estudioGrabacion"
         mc:Ignorable="d"
-        Title="Registro" Height="450" Width="800">
+        Title="Registro" Height="450" Width="800"
+        FontFamily="Old English Text MT">
     <Grid>
         <Grid Background="Black" Height="80" VerticalAlignment="Top" >
             <Image Source="imagenes/giphy.gif" Height="80" gif:ImageBehavior.AnimatedSource="imagenes/giphy.gif" gif:ImageBehavior.RepeatBehavior="Forever" HorizontalAlignment="Center" VerticalAlignment="Top"/>
@@ -26,21 +27,23 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Label Grid.Row="0" Grid.Column="0" Content="Usuario:" Margin="5"/>
-            <TextBox Grid.Row="0" Grid.Column="1" Margin="5"/>
+            <Label Grid.Row="0" Grid.Column="0" Content="Usuario:" Margin="5" FontFamily="Old English Text MT"/>
+            <TextBox x:Name="user" Grid.Row="0" Grid.Column="1" Margin="5" FontFamily="Old English Text MT"/>
 
-            <Label Grid.Row="1" Grid.Column="0" Content="Contraseña:" Margin="5"/>
-            <PasswordBox Grid.Row="1" Grid.Column="1" Margin="5"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="Correo:" Margin="5" FontFamily="Old English Text MT"/>
+            <TextBox x:Name="correo" Grid.Row="1" Grid.Column="1" Margin="5" FontFamily="Old English Text MT"/>
 
-            <Label Grid.Row="2" Grid.Column="0" Content="Correo:" Margin="5"/>
-            <TextBox Grid.Row="2" Grid.Column="1" Margin="5"/>
+            <Label Grid.Row="2" Grid.Column="0" Content="Contraseña:" Margin="5" FontFamily="Old English Text MT"/>
+            <PasswordBox x:Name="contra" Grid.Row="2" Grid.Column="1" Margin="5" FontFamily="Old English Text MT"/>
 
-            <Label Grid.Row="3" Grid.Column="0" Content="Teléfono:" Margin="5"/>
-            <TextBox Grid.Row="3" Grid.Column="1" Margin="5"/>
+            <Label Grid.Row="3" Grid.Column="0" Content="Teléfono:" Margin="5" FontFamily="Old English Text MT"/>
+            <TextBox x:Name="telefono" Grid.Row="3" Grid.Column="1" Margin="5" FontFamily="Old English Text MT"/>
 
-            <Button Grid.Row="4" Grid.Column="1" Content="Registrarse" Margin="5" Padding="10,5"/>
+            <Button Grid.Row="4" Grid.Column="1" Content="Registrarse" Margin="5" Padding="10,5" Click="registrar_Click" FontFamily="Old English Text MT"/>
 
-            <TextBlock Grid.Row="5" Grid.Column="1" Margin="5" Text="Ya tienes una cuenta? Inicia sesión." TextDecorations="Underline" Foreground="Blue" MouseDown="TextBlock_MouseDown"/>
+            <TextBlock  Grid.Row="5" Grid.Column="1" Margin="5" Text="Ya tienes una cuenta? Inicia sesión." TextDecorations="Underline" Foreground="Blue" MouseDown="TextBlock_MouseDown"/>
+            <TextBlock x:Name="correcto" Grid.Row="6" Grid.Column="1" Margin="5" Text="Se creo la cuenta con exito" HorizontalAlignment="Center" Foreground="SeaGreen" MouseDown="TextBlock_MouseDown" Visibility="Hidden"/>
+            <TextBlock x:Name="incorrecto" Grid.Row="6" Grid.Column="1" Margin="5" Text="Faltan campos por rellenar" HorizontalAlignment="Center" Foreground="Red" MouseDown="TextBlock_MouseDown" Visibility="Hidden"/>
         </Grid>
     </Grid>
 </Window>
