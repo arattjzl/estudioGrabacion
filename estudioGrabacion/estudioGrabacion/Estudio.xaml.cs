@@ -79,7 +79,7 @@ namespace estudioGrabacion
 
         private void MostrarDatosEstudio(object sender, SelectionChangedEventArgs e)
         {
-            if(usuario != "admin")
+            if(usuario != null)
             {
                 try
                 {
@@ -106,7 +106,6 @@ namespace estudioGrabacion
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.ToString());
                 }
             }
         }
@@ -170,10 +169,34 @@ namespace estudioGrabacion
 
         private void horas_TextChanged(object sender, TextChangedEventArgs e)
         {
-            precio.Content = "precio a pagar -- " + Int32.Parse(horas.Text) * 800;
+            precio.Content = Int32.Parse(horas.Text) * 800;
         }
 
-        
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            string url = "https://www.instagram.com/diegoseishiro/";
+
+            System.Diagnostics.Process.Start(url);
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            string url = "https://twitter.com/aratt_";
+
+            System.Diagnostics.Process.Start(url);
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            string url = "https://www.facebook.com/jeusujars.reveles";
+
+            System.Diagnostics.Process.Start(url);
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("No tenemos numero por el momento");
+        }
     }
 
 }

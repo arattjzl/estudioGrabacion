@@ -124,5 +124,31 @@ namespace estudioGrabacion
                 contraSi.Visibility = Visibility.Collapsed;
             }
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            string url = "https://www.instagram.com/diegoseishiro/";
+
+            System.Diagnostics.Process.Start(url);
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            string url = "https://twitter.com/aratt_";
+
+            System.Diagnostics.Process.Start(url);
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            string url = "https://www.facebook.com/jeusujars.reveles";
+
+            System.Diagnostics.Process.Start(url);
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("No tenemos numero por el momento");
+        }
     }
 }

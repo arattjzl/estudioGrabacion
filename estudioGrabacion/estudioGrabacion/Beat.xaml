@@ -75,7 +75,8 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Grid Grid.Column="3">
+            
+            <Grid Grid.Column="3" Visibility="Hidden" x:Name="camposAgregar">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
@@ -86,34 +87,49 @@
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="150"/>
                     <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 <!-- botones para agregar -->
 
                 <Label Content="Nombre" Grid.Row="0" FontSize="20" HorizontalAlignment="Center"/>
-                <TextBox Grid.Row="1" Text="" Margin="5" FontSize="20"/>
+                <TextBox x:Name="nombreNuevoBeat" Grid.Row="1" Text="" Margin="5" FontSize="20"/>
 
                 <Label Content="BPM - beats por minuto" Grid.Row="2" FontSize="20" HorizontalAlignment="Center"/>
-                <TextBox Grid.Row="3" Text="" Margin="5" FontSize="20"/>
+                <TextBox x:Name="bpmNuevoBeat" Grid.Row="3" Text="" Margin="5" FontSize="20"/>
 
                 <Label Content="Escala" Grid.Row="4" FontSize="20" HorizontalAlignment="Center"/>
-                <TextBox Grid.Row="5" Text="" Margin="5" FontSize="20"/>
+                <TextBox x:Name="escalaNuevoBeat" Grid.Row="5" Text="" Margin="5" FontSize="20"/>
 
                 <Label Content="Arrastra y suelta tu beat" Grid.Row="6" FontSize="20" HorizontalAlignment="Center"/>
-                <ListBox x:Name="nuevoBeat" Grid.Row="7" Margin="5" AllowDrop="True" BorderBrush="DarkSlateGray" BorderThickness="10" Drop="lstFiles_Drop" DragEnter="lstFiles_DragEnter"/>
+                <ListBox x:Name="nuevoBeat" Grid.Row="7" Margin="5" AllowDrop="True" BorderBrush="DarkSlateGray" BorderThickness="10" Drop="nuevoBeatDrop" DragEnter="lstFiles_DragEnter"/>
 
                 <Button x:Name="agregar" Grid.Row="8" Content="Agregar" HorizontalAlignment="Center"  Visibility="Visible" Height="50" Width="150" Click="agregar_Click"/>
+
+                <TextBlock x:Name="correcto" Grid.Row="9" Margin="5" Text="Beat agregado con exito" HorizontalAlignment="Center" Foreground="SeaGreen" Visibility="Hidden" FontSize="20"/>
+                <TextBlock x:Name="incorrecto" Grid.Row="9" Margin="5" Text="Fallo al agregar beat" HorizontalAlignment="Center" Foreground="Red" Visibility="Hidden" FontSize="20"/>
 
             </Grid>
 
             <Grid Margin="5" Grid.Column="0">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="450"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <ListBox x:Name="listaBeats" Grid.Row="0" Margin="5" Background="Transparent" BorderBrush="DimGray" BorderThickness="5" FontSize="40" d:ItemsSource="{d:SampleData ItemCount=5}" HorizontalContentAlignment="Center" />
+                <ListBox x:Name="listaBeats" Grid.Row="0" Margin="5" Foreground="White" Background="Transparent" BorderBrush="DimGray" BorderThickness="5" FontSize="40" d:ItemsSource="{d:SampleData ItemCount=5}" HorizontalContentAlignment="Center" SelectionChanged="reprodBeats"/>
+
+                <StackPanel Grid.Row="1">
+                    <Label Name="lblStatus" Content="Not playing..." FontSize="30" Foreground="White" HorizontalContentAlignment="Center" Margin="5" />
+                    <WrapPanel HorizontalAlignment="Center">
+                        <Button Name="btnPlay" Click="btnPlay_Click" Height="40" Width="50"  FontSize="20">Play</Button>
+                        <Button Name="btnPause" Margin="5,0" Click="btnPause_Click" Height="40" Width="60"  FontSize="20">Pause</Button>
+                        <Button Name="btnStop" Click="btnStop_Click" Height="40" Width="50"  FontSize="20">Stop</Button>
+                    </WrapPanel>
+                </StackPanel>
+
             </Grid>
-            <Grid Margin="5" Grid.Column="1" >
+            <Grid Margin="5" Grid.Column="1" Grid.ColumnSpan="2">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="50"/>
@@ -129,18 +145,18 @@
                 <Label Content="Informacion del Beat" Grid.Row="0" FontSize="20" HorizontalAlignment="Center" Grid.ColumnSpan="2"/>
 
                 <Label Content="Nombre" Grid.Row="2" Grid.Column="0" FontSize="20" HorizontalAlignment="Center"/>
-                <Label Content="hola" Grid.Row="2" Grid.Column="1" FontSize="20" HorizontalAlignment="Center"/>
+                <Label x:Name="detallesNombre" Grid.Row="2" Grid.Column="1" FontSize="20" HorizontalAlignment="Center"/>
 
                 <Label Content="BPM - beats por minuto" Grid.Row="3" Grid.Column="0"  FontSize="20" HorizontalAlignment="Center"/>
-                <Label Content="170" Grid.Row="3" Grid.Column="1" FontSize="20" HorizontalAlignment="Center"/>
+                <Label x:Name="detallesBpm" Grid.Row="3" Grid.Column="1" FontSize="20" HorizontalAlignment="Center"/>
 
                 <Label Content="Escala" Grid.Row="4" Grid.Column="0" FontSize="20" HorizontalAlignment="Center"/>
-                <Label Content="Gm" Grid.Row="4" Grid.Column="1" FontSize="20" HorizontalAlignment="Center"/>
+                <Label x:Name="detallesEscala" Grid.Row="4" Grid.Column="1" FontSize="20" HorizontalAlignment="Center"/>
 
             </Grid>
 
         </Grid>
-        <Grid Background="Black" VerticalAlignment="Bottom" Height="70">
+        <Grid Background="Black" VerticalAlignment="Bottom" Height="40">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -151,10 +167,20 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Image Source="imagenes/facebook.jpg" Grid.Column="3" Stretch="Uniform" Height="40"/>
-            <Image Source="imagenes/instagram.jpg" Grid.Column="5" Stretch="Uniform" Height="40"/>
-            <Image Source="imagenes/telefono.jpg" Grid.Column="4" Stretch="Uniform" Height="40"/>
-            <Image Source="imagenes/twitter.jpg" Grid.Column="2" Stretch="Uniform" Height="40"/>
+
+            <Button Background="Black" Grid.Column="3" Click="Button_Click_1">
+                <Image Source="imagenes/instagram.jpg" Grid.Column="5" Stretch="Uniform" Height="30"/>
+            </Button>
+            <Button Background="Black" Grid.Column="2" Click="Button_Click_2">
+                <Image Source="imagenes/twitter.jpg" Stretch="Uniform" Height="30"/>
+            </Button>
+            <Button Background="Black" Grid.Column="5" Click="Button_Click_3">
+                <Image Source="imagenes/facebook.jpg"  Stretch="Uniform" Height="30"/>
+            </Button>
+            <Button  Background="Black" Grid.Column="4" Click="Button_Click_4">
+                <Image Source="imagenes/telefono.jpg" Grid.Column="4" Stretch="Uniform" Height="30"/>
+            </Button>
+            
         </Grid>
 
     </Grid>

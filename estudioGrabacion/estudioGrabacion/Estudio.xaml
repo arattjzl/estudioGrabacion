@@ -74,6 +74,7 @@
             <Label x:Name="errReserv" Content="Error en la reservacion" Foreground="Red" Margin="468,380,0,0" Visibility="Hidden" Grid.Column="2" />
             <Button x:Name="elimin" Content="Eliminar" HorizontalAlignment="Left" Margin="468,240,0,0" Width="150" Height="30" VerticalAlignment="Top" Grid.Column="2" Visibility="Hidden" Click="elimin_Click"/>
             <ListBox x:Name="estudios" Background="Transparent" FontFamily="Old English Text MT" BorderBrush="DimGray" BorderThickness="10" FontSize="40" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="213,234,423,478" HorizontalContentAlignment="Center" SelectionChanged="MostrarDatosEstudio" Grid.ColumnSpan="2"/>
+
             <StackPanel Margin="100,240,500,0" Visibility="Visible" Grid.Column="1" Grid.ColumnSpan="2">
                 <Grid Margin="0,0,0,0">
                     <Grid.RowDefinitions>
@@ -113,7 +114,7 @@
 
         </Grid>
 
-        <Grid Background="Black" VerticalAlignment="Bottom" Height="70">
+        <Grid Background="Black" VerticalAlignment="Bottom" Height="40">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -124,10 +125,20 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Image Source="imagenes/facebook.jpg" Grid.Column="3" Stretch="Uniform" Height="40"/>
-            <Image Source="imagenes/instagram.jpg" Grid.Column="5" Stretch="Uniform" Height="40"/>
-            <Image Source="imagenes/telefono.jpg" Grid.Column="4" Stretch="Uniform" Height="40"/>
-            <Image Source="imagenes/twitter.jpg" Grid.Column="2" Stretch="Uniform" Height="40"/>
+
+            <Button Background="Black" Grid.Column="3" Click="Button_Click_1">
+                <Image Source="imagenes/instagram.jpg" Grid.Column="5" Stretch="Uniform" Height="30"/>
+            </Button>
+            <Button Background="Black" Grid.Column="2" Click="Button_Click_2">
+                <Image Source="imagenes/twitter.jpg" Stretch="Uniform" Height="30"/>
+            </Button>
+            <Button Background="Black" Grid.Column="5" Click="Button_Click_3">
+                <Image Source="imagenes/facebook.jpg"  Stretch="Uniform" Height="30"/>
+            </Button>
+            <Button  Background="Black" Grid.Column="4" Click="Button_Click_4">
+                <Image Source="imagenes/telefono.jpg" Grid.Column="4" Stretch="Uniform" Height="30"/>
+            </Button>
+            
         </Grid>
     </Grid>
 </Window>

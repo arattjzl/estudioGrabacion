@@ -6,9 +6,10 @@
         xmlns:local="clr-namespace:estudioGrabacion"
         xmlns:gif="http://wpfanimatedgif.codeplex.com"
         mc:Ignorable="d"
-        Title="MainWindow" WindowState="Maximized"
-        Visibility="Visible" d:DesignHeight="476.31" d:DesignWidth="1853.147"
+        Title="Inicio" WindowState="Maximized"
+        Visibility="Visible"
         FontFamily="Old English Text MT">
+        
 
     <Window.Background>
         <ImageBrush ImageSource="imagenes/fongo.jpg" Stretch="UniformToFill" AlignmentX="Center" AlignmentY="Center" Opacity="0.5"/>
@@ -65,13 +66,15 @@
                     </Button>
                 </Grid>
             </Grid>
-            <Grid>
-                <Button x:Name="registrar" Content="Registrarse" HorizontalAlignment="Left" Margin="1700,178,0,0" Width="100" Height="30" VerticalAlignment="Top" Click="registrase_click" FontFamily="Old English Text MT"/>
-                <Button x:Name="inicioSes" Content="Iniciar Sesion" HorizontalAlignment="Left" Margin="1550,178,0,0" Width="100" Height="30" VerticalAlignment="Top" Click="inicioSes_click" FontFamily="Old English Text MT"/>
-            </Grid>
+            
+        </Grid>
+        
+        <Grid>
+            <Button x:Name="registrar" Content="Registrarse" HorizontalAlignment="Left" Margin="1700,178,0,0" Width="100" Height="30" VerticalAlignment="Top" Click="registrase_click" FontFamily="Old English Text MT"/>
+            <Button x:Name="inicioSes" Content="Iniciar Sesion" HorizontalAlignment="Left" Margin="1550,178,0,0" Width="100" Height="30" VerticalAlignment="Top" Click="inicioSes_click" FontFamily="Old English Text MT"/>
         </Grid>
 
-        <Grid Background="Black" VerticalAlignment="Bottom" Height="70">
+        <Grid Background="Black" VerticalAlignment="Bottom" Height="40">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition/>
@@ -82,10 +85,20 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Image Source="imagenes/facebook.jpg" Grid.Column="3" Stretch="Uniform" Height="40"/>
-            <Image Source="imagenes/instagram.jpg" Grid.Column="5" Stretch="Uniform" Height="40"/>
-            <Image Source="imagenes/telefono.jpg" Grid.Column="4" Stretch="Uniform" Height="40"/>
-            <Image Source="imagenes/twitter.jpg" Grid.Column="2" Stretch="Uniform" Height="40"/>
+            
+            <Button Background="Black" Grid.Column="3" Click="Button_Click_1">
+                <Image Source="imagenes/instagram.jpg" Grid.Column="5" Stretch="Uniform" Height="30"/>
+            </Button>
+            <Button Background="Black" Grid.Column="2" Click="Button_Click_2">
+                <Image Source="imagenes/twitter.jpg" Stretch="Uniform" Height="30"/>
+            </Button>
+            <Button Background="Black" Grid.Column="5" Click="Button_Click_3">
+                <Image Source="imagenes/facebook.jpg"  Stretch="Uniform" Height="30"/>
+            </Button>
+            <Button  Background="Black" Grid.Column="4" Click="Button_Click_4">
+                <Image Source="imagenes/telefono.jpg" Grid.Column="4" Stretch="Uniform" Height="30"/>
+            </Button>
+            
         </Grid>
     </Grid>
 </Window>
