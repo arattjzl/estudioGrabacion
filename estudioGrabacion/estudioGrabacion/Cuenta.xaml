@@ -9,6 +9,10 @@
         Title="Cuenta" WindowState="Maximized"
         Visibility="Visible" d:DesignHeight="638.385" d:DesignWidth="627.12"
         FontFamily="Old English Text MT">
+    <Window.Background>
+        <ImageBrush ImageSource="imagenes/fongo.jpg" Stretch="UniformToFill" AlignmentX="Center" AlignmentY="Center" Opacity="0.5"/>
+    </Window.Background>
+    
     <Grid>
         <Grid Background="Black" Height="160" VerticalAlignment="Top" >
             <Label Content="ESTUDIO" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="300,0,0,0" FontSize="40" FontFamily="Old English Text MT"/>
@@ -92,6 +96,22 @@
 
             <Label Grid.Row="5" Grid.ColumnSpan="2"  x:Name="correcto" Content="Se actualizaron los datos" HorizontalAlignment="Center" Foreground="MediumSeaGreen" Margin="5" Visibility="Hidden" FontFamily="Old English Text MT"/>
             <Label Grid.Row="5" Grid.ColumnSpan="2"  x:Name="incorrecto" Content="No se pudieron actualizaron los datos" HorizontalAlignment="Center" Foreground="red" Margin="5" Visibility="Hidden" FontFamily="Old English Text MT"/>
+        </Grid>
+        <Grid Background="Black" VerticalAlignment="Bottom" Height="70">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image Source="imagenes/facebook.jpg" Grid.Column="3" Stretch="Uniform" Height="40"/>
+            <Image Source="imagenes/instagram.jpg" Grid.Column="5" Stretch="Uniform" Height="40"/>
+            <Image Source="imagenes/telefono.jpg" Grid.Column="4" Stretch="Uniform" Height="40"/>
+            <Image Source="imagenes/twitter.jpg" Grid.Column="2" Stretch="Uniform" Height="40"/>
         </Grid>
     </Grid>
 </Window>

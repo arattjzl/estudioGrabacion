@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,7 +29,6 @@ namespace estudioGrabacion
             InitializeComponent();
             this.admin = admin;
             this.usuario = usuario;
-            MuestraBoton();
         }
 
         private void inicio_Click(object sender, RoutedEventArgs e)
@@ -51,12 +52,40 @@ namespace estudioGrabacion
             Visibility = Visibility.Hidden;
         }
 
-        private void MuestraBoton()
+        private void lstFiles_Drop(object sender, DragEventArgs e)
         {
-            if (admin == true)
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
             {
-                algo.Visibility= Visibility.Visible;
+                // Obtener la lista de archivos arrastrados
+                string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+
+                // Agregar los archivos MP3 al ListBox
+                foreach (string file in files)
+                {
+                    if (System.IO.Path.GetExtension(file) == ".mp3")
+                    {
+                        nuevoBeat.Items.Add(file);
+                    }
+                }
             }
         }
+
+        private void lstFiles_DragEnter(object sender, DragEventArgs e)
+        {
+            if (e.Data.GetDataPresent(DataFormats.FileDrop))
+            {
+                e.Effects = DragDropEffects.Copy;
+            }
+            else
+            {
+                e.Effects = DragDropEffects.None;
+            }
+        }
+
+        private void agregar_Click(object sender, RoutedEventArgs e)
+        {
+             
+        }
+
     }
 }

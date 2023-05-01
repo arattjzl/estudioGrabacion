@@ -93,9 +93,10 @@ namespace estudioGrabacion
                         DataTable tablaEstudios = new DataTable();
                         miAdaptadorSQL.Fill(tablaEstudios);
                         string nombreEst = tablaEstudios.Rows[0]["nombre"].ToString();
-                        string source = $"imagenes/{nombreEst}.jpg";
+                        string newnom = nombreEst.Replace(" ", "");
+                        string source = "imagenes/" + newnom + ".jpg";
 
-                        imagen.Source = new BitmapImage(new Uri(source, UriKind.RelativeOrAbsolute));
+                        imagen.Source = new BitmapImage(new Uri("imagenes/" + newnom + ".jpg", UriKind.RelativeOrAbsolute));
                         nombre.Content = "nombre " + tablaEstudios.Rows[0]["nombre"].ToString().ToUpper();
                         calle.Content = "calle " + tablaEstudios.Rows[0]["calle"].ToString().ToUpper();
                         numExterior.Content = "numero exterior " + tablaEstudios.Rows[0]["numExt"].ToString().ToUpper();
@@ -171,5 +172,8 @@ namespace estudioGrabacion
         {
             precio.Content = "precio a pagar -- " + Int32.Parse(horas.Text) * 800;
         }
+
+        
     }
+
 }

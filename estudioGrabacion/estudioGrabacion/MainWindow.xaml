@@ -10,59 +10,82 @@
         Visibility="Visible" d:DesignHeight="476.31" d:DesignWidth="1853.147"
         FontFamily="Old English Text MT">
 
+    <Window.Background>
+        <ImageBrush ImageSource="imagenes/fongo.jpg" Stretch="UniformToFill" AlignmentX="Center" AlignmentY="Center" Opacity="0.5"/>
+    </Window.Background>
+        
     <Grid>
-        <Grid Background="Black" Height="160" VerticalAlignment="Top" >
-            <Label Content="ESTUDIO" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="300,0,0,0" FontSize="40" FontFamily="Old English Text MT"/>
-            <Image Source="imagenes/giphy.gif" Height="110" gif:ImageBehavior.AnimatedSource="imagenes/giphy.gif" gif:ImageBehavior.RepeatBehavior="Forever" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Label Content="GRABACI" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,300,0" FontSize="40" FontFamily="Old English Text MT"/>
-            <Grid Height="50" VerticalAlignment="Bottom">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <Button x:Name="inicio" Foreground="Black" Grid.Column="0" Margin="2,3,3,3" Padding="1,1,1,1" FontSize="24" FontFamily="Old English Text MT">
-                    <Button.Template>
-                        <ControlTemplate TargetType="{x:Type Button}">
-                            <Border Background="White" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
-                                <ContentPresenter Content="Inicio" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" ></ContentPresenter>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
-                <Button x:Name="beat" Foreground="White" Grid.Column="1" Margin="2,3,3,3" Padding="1,1,1,1" Click="Button_Click" FontSize="24" FontFamily="Old English Text MT">
-                    <Button.Template>
-                        <ControlTemplate TargetType="{x:Type Button}">
-                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
-                                <ContentPresenter Content="Beat" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30"></ContentPresenter>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
-                <Button x:Name="estudio" Foreground="White" Grid.Column="2" Margin="2,3,3,3" Padding="1,1,1,1" Click="estudio_Click" FontSize="24" FontFamily="Old English Text MT">
-                    <Button.Template>
-                        <ControlTemplate TargetType="{x:Type Button}">
-                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
-                                <ContentPresenter Content="Estudio" HorizontalAlignment="Center" VerticalAlignment="Center" Height="24"></ContentPresenter>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
-                <Button x:Name="cuenta" Foreground="White" Grid.Column="3" Margin="2,3,3,3" Padding="1,1,1,1" Click="cuenta_Click" FontSize="24" FontFamily="Old English Text MT">
-                    <Button.Template>
-                        <ControlTemplate TargetType="{x:Type Button}">
-                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
-                                <ContentPresenter Content="Cuenta" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30"></ContentPresenter>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
+        <Grid>
+            <Grid Background="Black" Height="160" VerticalAlignment="Top" >
+                <Label Content="ESTUDIO" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="300,0,0,0" FontSize="40" FontFamily="Old English Text MT"/>
+                <Image Source="imagenes/giphy.gif" Height="110" gif:ImageBehavior.AnimatedSource="imagenes/giphy.gif" gif:ImageBehavior.RepeatBehavior="Forever" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <Label Content="GRABACI" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,300,0" FontSize="40" FontFamily="Old English Text MT"/>
+                <Grid Height="50" VerticalAlignment="Bottom">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="inicio" Foreground="Black" Grid.Column="0" Margin="2,3,3,3" Padding="1,1,1,1" FontSize="24" FontFamily="Old English Text MT">
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="White" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
+                                    <ContentPresenter Content="Inicio" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" ></ContentPresenter>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="beat" Foreground="White" Grid.Column="1" Margin="2,3,3,3" Padding="1,1,1,1" Click="Button_Click" FontSize="24" FontFamily="Old English Text MT">
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
+                                    <ContentPresenter Content="Beat" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30"></ContentPresenter>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="estudio" Foreground="White" Grid.Column="2" Margin="2,3,3,3" Padding="1,1,1,1" Click="estudio_Click" FontSize="24" FontFamily="Old English Text MT">
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
+                                    <ContentPresenter Content="Estudio" HorizontalAlignment="Center" VerticalAlignment="Center" Height="24"></ContentPresenter>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="cuenta" Foreground="White" Grid.Column="3" Margin="2,3,3,3" Padding="1,1,1,1" Click="cuenta_Click" FontSize="24" FontFamily="Old English Text MT">
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
+                                    <ContentPresenter Content="Cuenta" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30"></ContentPresenter>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </Grid>
+            </Grid>
+            <Grid>
+                <Button x:Name="registrar" Content="Registrarse" HorizontalAlignment="Left" Margin="1700,178,0,0" Width="100" Height="30" VerticalAlignment="Top" Click="registrase_click" FontFamily="Old English Text MT"/>
+                <Button x:Name="inicioSes" Content="Iniciar Sesion" HorizontalAlignment="Left" Margin="1550,178,0,0" Width="100" Height="30" VerticalAlignment="Top" Click="inicioSes_click" FontFamily="Old English Text MT"/>
             </Grid>
         </Grid>
-        <Grid>
-            <Button x:Name="registrar" Content="Registrarse" HorizontalAlignment="Left" Margin="1700,178,0,0" Width="100" Height="30" VerticalAlignment="Top" Click="registrase_click" FontFamily="Old English Text MT"/>
-            <Button x:Name="inicioSes" Content="Iniciar Sesion" HorizontalAlignment="Left" Margin="1550,178,0,0" Width="100" Height="30" VerticalAlignment="Top" Click="inicioSes_click" FontFamily="Old English Text MT"/>
+
+        <Grid Background="Black" VerticalAlignment="Bottom" Height="70">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image Source="imagenes/facebook.jpg" Grid.Column="3" Stretch="Uniform" Height="40"/>
+            <Image Source="imagenes/instagram.jpg" Grid.Column="5" Stretch="Uniform" Height="40"/>
+            <Image Source="imagenes/telefono.jpg" Grid.Column="4" Stretch="Uniform" Height="40"/>
+            <Image Source="imagenes/twitter.jpg" Grid.Column="2" Stretch="Uniform" Height="40"/>
         </Grid>
     </Grid>
 </Window>

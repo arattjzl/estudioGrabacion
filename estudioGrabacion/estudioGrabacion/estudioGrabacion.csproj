@@ -75,6 +75,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AudioFile.cs" />
     <Compile Include="ESTUDIOGRABACIONDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -186,13 +187,24 @@
     <Folder Include="beats\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="imagenes\Groove Lab.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="imagenes\Groove Lab.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="imagenes\fongo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\FlowCity.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\BlackEstudio.jpg" />
+    <Resource Include="imagenes\GrooveLab.jpg" />
+    <Resource Include="imagenes\SoulVibesRecords.jpg" />
+    <Resource Include="imagenes\UrbanSound.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\facebook.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\instagram.jpg" />
+    <Resource Include="imagenes\telefono.jpg" />
+    <Resource Include="imagenes\twitter.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

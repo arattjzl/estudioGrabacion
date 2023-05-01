@@ -7,109 +7,127 @@
         xmlns:gif="http://wpfanimatedgif.codeplex.com"
         mc:Ignorable="d"
         Title="Estudio" WindowState="Maximized"
-        Visibility="Visible" d:DesignHeight="1130.99" d:DesignWidth="1899.359"
+        Visibility="Visible"
         FontFamily="Old English Text MT">
     <Window.Background>
         <ImageBrush ImageSource="imagenes/fongo.jpg" Stretch="UniformToFill" AlignmentX="Center" AlignmentY="Center" Opacity="0.5"/>
     </Window.Background>
+   
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="698*"/>
-            <ColumnDefinition Width="435*"/>
-            <ColumnDefinition Width="767*"/>
-        </Grid.ColumnDefinitions>
-        <Grid Background="Black" Height="160" VerticalAlignment="Top" Grid.ColumnSpan="3" >
-            <Label Content="ESTUDIO" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="300,0,0,0" FontFamily="Old English Text MT" FontSize="40"/>
-            <Image Source="imagenes/giphy.gif" Height="110" gif:ImageBehavior.AnimatedSource="imagenes/giphy.gif" gif:ImageBehavior.RepeatBehavior="Forever" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Label Content="GRABACI" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,300,0" FontSize="40" FontFamily="Old English Text MT"/>
-            <Grid Height="50" VerticalAlignment="Bottom">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-                <Button x:Name="inicio" Foreground="White" Grid.Column="0" Margin="2,3,3,3" Padding="1,1,1,1" FontSize="24" FontFamily="Old English Text MT" Click="inicio_Click">
-                    <Button.Template>
-                        <ControlTemplate TargetType="{x:Type Button}">
-                            <Border Background="Black" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
-                                <ContentPresenter Content="Inicio" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" ></ContentPresenter>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
-                <Button x:Name="beat" Foreground="White" Grid.Column="1" Margin="2,3,3,3" Padding="1,1,1,1" Click="beat_Click" FontSize="24" FontFamily="Old English Text MT">
-                    <Button.Template>
-                        <ControlTemplate TargetType="{x:Type Button}">
-                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
-                                <ContentPresenter Content="Beat" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30"></ContentPresenter>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
-                <Button x:Name="estudio" Foreground="Black" Grid.Column="2" Margin="2,3,3,3" Padding="1,1,1,1" FontSize="24" FontFamily="Old English Text MT">
-                    <Button.Template>
-                        <ControlTemplate TargetType="{x:Type Button}">
-                            <Border Background="White" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
-                                <ContentPresenter Content="Estudio" HorizontalAlignment="Center" VerticalAlignment="Center" Height="24"></ContentPresenter>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
-                <Button x:Name="cuenta" Foreground="White" Grid.Column="3" Margin="2,3,3,3" Padding="1,1,1,1" Click="cuenta_Click" FontSize="24" FontFamily="Old English Text MT">
-                    <Button.Template>
-                        <ControlTemplate TargetType="{x:Type Button}">
-                            <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
-                                <ContentPresenter Content="Cuenta" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30"></ContentPresenter>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-                </Button>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="698*"/>
+                <ColumnDefinition Width="435*"/>
+                <ColumnDefinition Width="767*"/>
+            </Grid.ColumnDefinitions>
+            <Grid Background="Black" Height="160" VerticalAlignment="Top" Grid.ColumnSpan="3" >
+                <Label Content="ESTUDIO" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="300,0,0,0" FontFamily="Old English Text MT" FontSize="40"/>
+                <Image Source="imagenes/giphy.gif" Height="110" gif:ImageBehavior.AnimatedSource="imagenes/giphy.gif" gif:ImageBehavior.RepeatBehavior="Forever" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <Label Content="GRABACI" Foreground="White" VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,300,0" FontSize="40" FontFamily="Old English Text MT"/>
+                <Grid Height="50" VerticalAlignment="Bottom">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="inicio" Foreground="White" Grid.Column="0" Margin="2,3,3,3" Padding="1,1,1,1" FontSize="24" FontFamily="Old English Text MT" Click="inicio_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="Black" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
+                                    <ContentPresenter Content="Inicio" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30" ></ContentPresenter>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="beat" Foreground="White" Grid.Column="1" Margin="2,3,3,3" Padding="1,1,1,1" Click="beat_Click" FontSize="24" FontFamily="Old English Text MT">
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
+                                    <ContentPresenter Content="Beat" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30"></ContentPresenter>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="estudio" Foreground="Black" Grid.Column="2" Margin="2,3,3,3" Padding="1,1,1,1" FontSize="24" FontFamily="Old English Text MT">
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="White" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
+                                    <ContentPresenter Content="Estudio" HorizontalAlignment="Center" VerticalAlignment="Center" Height="24"></ContentPresenter>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="cuenta" Foreground="White" Grid.Column="3" Margin="2,3,3,3" Padding="1,1,1,1" Click="cuenta_Click" FontSize="24" FontFamily="Old English Text MT">
+                        <Button.Template>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="3">
+                                    <ContentPresenter Content="Cuenta" HorizontalAlignment="Center" VerticalAlignment="Center" Height="30"></ContentPresenter>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </Grid>
             </Grid>
+            <Button x:Name="reserv" Content="Reservar" HorizontalAlignment="Left" Margin="468,340,0,0" Width="150" Height="30" VerticalAlignment="Top" Grid.Column="2" Visibility="Hidden" Click="reserv_Click"/>
+            <Label x:Name="corrReserv" Content="Se realizo la reservacion" Foreground="DarkOliveGreen" Margin="468,380,0,0" Visibility="Hidden" Grid.Column="2" />
+            <Label x:Name="errReserv" Content="Error en la reservacion" Foreground="Red" Margin="468,380,0,0" Visibility="Hidden" Grid.Column="2" />
+            <Button x:Name="elimin" Content="Eliminar" HorizontalAlignment="Left" Margin="468,240,0,0" Width="150" Height="30" VerticalAlignment="Top" Grid.Column="2" Visibility="Hidden" Click="elimin_Click"/>
+            <ListBox x:Name="estudios" Background="Transparent" FontFamily="Old English Text MT" BorderBrush="DimGray" BorderThickness="10" FontSize="40" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="213,234,423,478" HorizontalContentAlignment="Center" SelectionChanged="MostrarDatosEstudio" Grid.ColumnSpan="2"/>
+            <StackPanel Margin="100,240,500,0" Visibility="Visible" Grid.Column="1" Grid.ColumnSpan="2">
+                <Grid Margin="0,0,0,0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="250"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Image x:Name="imagen" Grid.Row="0" Stretch="Uniform" Height="250" />
+                    <Label x:Name="nombre" Grid.Row="1" FontFamily="Old English Text MT" FontSize="30"/>
+                    <Label x:Name="calle" Grid.Row="2" FontFamily="Old English Text MT" FontSize="30"/>
+                    <Label x:Name="numExterior" Grid.Row="3" FontFamily="Old English Text MT" FontSize="30"/>
+                    <Label x:Name="numInterior" Grid.Row="4" FontFamily="Old English Text MT" FontSize="30"/>
+                </Grid>
+                <Grid x:Name="camposReserv" Visibility="Hidden">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Label Content="Fecha" Grid.Column="0" Grid.Row="0" FontFamily="Old English Text MT" FontSize="30"/>
+                    <DatePicker x:Name="fecha" Grid.Column="1" Grid.Row="0" FontFamily="Old English Text MT" FontSize="30" Background="Transparent"/>
+                    <Label Content="Hora Incio" Grid.Column="0" Grid.Row="1" FontFamily="Old English Text MT" FontSize="30"/>
+                    <TextBox x:Name="horaIn" Grid.Column="1" Grid.Row="1" FontFamily="Old English Text MT" FontSize="30" Background="Transparent"/>
+                    <Label Content="Horas" Grid.Column="0" Grid.Row="2" FontFamily="Old English Text MT" FontSize="30"/>
+                    <TextBox x:Name="horas" Grid.Column="1" Grid.Row="2" TextChanged="horas_TextChanged" FontFamily="Old English Text MT" FontSize="30" Background="Transparent"/>
+                    <Label x:Name="precio" Grid.ColumnSpan="2" Grid.Row="3" HorizontalAlignment="Center" FontFamily="Old English Text MT" FontSize="30"/>
+                </Grid>
+            </StackPanel>
+
         </Grid>
-        <Button x:Name="reserv" Content="Reservar" HorizontalAlignment="Left" Margin="468,340,0,0" Width="150" Height="30" VerticalAlignment="Top" Grid.Column="2" Visibility="Hidden" Click="reserv_Click"/>
-        <Label x:Name="corrReserv" Content="Se realizo la reservacion" Foreground="DarkOliveGreen" Margin="468,380,0,0" Visibility="Hidden" Grid.Column="2" />
-        <Label x:Name="errReserv" Content="Error en la reservacion" Foreground="Red" Margin="468,380,0,0" Visibility="Hidden" Grid.Column="2" />
-        <Button x:Name="elimin" Content="Eliminar" HorizontalAlignment="Left" Margin="468,240,0,0" Width="150" Height="30" VerticalAlignment="Top" Grid.Column="2" Visibility="Hidden" Click="elimin_Click"/>
-        <ListBox x:Name="estudios" Background="Transparent" FontFamily="Old English Text MT" BorderBrush="DimGray" BorderThickness="10" FontSize="40" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="213,234,423,478" HorizontalContentAlignment="Center" SelectionChanged="MostrarDatosEstudio" Grid.ColumnSpan="2"/>
-        <StackPanel Margin="100,240,500,200" Visibility="Visible" Grid.Column="1" Grid.ColumnSpan="2">
-            <Grid Margin="0,0,0,100">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Image x:Name="imagen" Grid.Row="0" Grid.RowSpan="4"/>
-                <Label x:Name="nombre" Grid.Row="4" FontFamily="Old English Text MT" FontSize="30"/>
-                <Label x:Name="calle" Grid.Row="5" FontFamily="Old English Text MT" FontSize="30"/>
-                <Label x:Name="numExterior" Grid.Row="6" FontFamily="Old English Text MT" FontSize="30"/>
-                <Label x:Name="numInterior" Grid.Row="7" FontFamily="Old English Text MT" FontSize="30"/>
-            </Grid>
-            <Grid x:Name="camposReserv" Visibility="Hidden">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="auto"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="auto"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-                <Label Content="Fecha" Grid.Column="0" Grid.Row="0" FontFamily="Old English Text MT" FontSize="30"/>
-                <DatePicker x:Name="fecha" Grid.Column="1" Grid.Row="0" FontFamily="Old English Text MT" FontSize="30" Background="Transparent"/>
-                <Label Content="Hora Incio" Grid.Column="0" Grid.Row="1" FontFamily="Old English Text MT" FontSize="30"/>
-                <TextBox x:Name="horaIn" Grid.Column="1" Grid.Row="1" FontFamily="Old English Text MT" FontSize="30" Background="Transparent"/>
-                <Label Content="Horas" Grid.Column="0" Grid.Row="2" FontFamily="Old English Text MT" FontSize="30"/>
-                <TextBox x:Name="horas" Grid.Column="1" Grid.Row="2" TextChanged="horas_TextChanged" FontFamily="Old English Text MT" FontSize="30" Background="Transparent"/>
-                <Label x:Name="precio" Grid.ColumnSpan="2" Grid.Row="3" HorizontalAlignment="Center" FontFamily="Old English Text MT" FontSize="30"/>
-            </Grid>
-        </StackPanel>
+
+        <Grid Background="Black" VerticalAlignment="Bottom" Height="70">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image Source="imagenes/facebook.jpg" Grid.Column="3" Stretch="Uniform" Height="40"/>
+            <Image Source="imagenes/instagram.jpg" Grid.Column="5" Stretch="Uniform" Height="40"/>
+            <Image Source="imagenes/telefono.jpg" Grid.Column="4" Stretch="Uniform" Height="40"/>
+            <Image Source="imagenes/twitter.jpg" Grid.Column="2" Stretch="Uniform" Height="40"/>
+        </Grid>
     </Grid>
 </Window>
